@@ -32,6 +32,10 @@ class Game {
         const playerImages = document.querySelectorAll(".player");
         // Removes event listeners from images
         playerImages.forEach(element => {
+
+            if (element.classList.contains("clicked-image")) {
+                element.classList.remove("clicked-image");
+            }
             // Cloning nodes to remove event listeners
             element.replaceWith(element.cloneNode(true));
         });
@@ -39,6 +43,11 @@ class Game {
         const computerChoiceImages = document.querySelectorAll(".computer");
 
         computerChoiceImages.forEach(element => {
+            
+            if (element.classList.contains("clicked-image")) {
+                element.classList.remove("clicked-image");
+            }
+
             element.replaceWith(element.cloneNode(true));
         });
     }
@@ -129,6 +138,12 @@ class Game {
         playerImages.forEach(element => {
             element.className = "image player";
             // Cloning nodes to remove event listeners
+            element.replaceWith(element.cloneNode(true));
+        });
+
+        const computerChoiceImages = document.querySelectorAll(".computer");
+
+        computerChoiceImages.forEach(element => {
             element.replaceWith(element.cloneNode(true));
         });
 
