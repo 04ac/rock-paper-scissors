@@ -3,14 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <title>Rock Paper Scissors!</title>
+        <link rel="stylesheet" href="styles.css" />
     </head>
 
     <body>
-        <script src="script.js"></script>
-        <h1>Rock Paper Scissors!</h1>
-        <h3>Currently playable in console only.
-            <br>
-            GUI: To be added.
-        </h3>
+        <script src="script.js" defer></script>
+        <div class="header">
+            <h1>Rock Paper Scissors!</h1>
+            <h1 id="score">Score: 0 - 0</h1>
+        </div>
+        
+
+        <div class="container">
+            <div class="player-options">
+                <h2>You</h2>
+                <img alt="Rock" src="images/rock.png" class="image player"/>
+                <img alt="Paper" src="images/paper.jpg" class="image player"/>
+                <img alt="Scissors" src="images/scissors.png" class="image player"/>
+            </div>
+
+            <div class="computer-options">
+                <h2>Computer</h2>
+                <img alt="Rock" src="images/rock.png" class="image computer"/>
+                <img alt="Paper" src="images/paper.jpg" class="image computer"/>
+                <img alt="Scissors" src="images/scissors.png" class="image computer"/>
+            </div>
+        </div>
+
+        <button id="start-game">Start Game!</button>
+
+        <p id="conclusion"></p>
+        <p id="text" class="text"></p>
     </body>
 </html>

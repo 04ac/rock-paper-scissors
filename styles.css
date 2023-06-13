@@ -1,0 +1,93 @@
+html {
+    padding: 40px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(33, 113, 116);
+    color: aliceblue;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#score {
+    color: gold;
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px gold solid;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+
+    justify-content: space-around;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin: 10px 20px;
+    margin-left: 0px;
+}
+
+.computer-options .image {
+    transition-delay: 0.3s;
+}
+
+.image {
+    border: 5px solid yellow;
+    border-radius: 8px;
+    transition: all .15s ease;
+}
+
+.clicked-image {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 5px #ffc600;
+}
+
+#start-game {
+    display: flex;
+    margin: 20px auto;
+    font-size: 30px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: teal;
+    background-color: turquoise;
+    border: 4px solid turquoise;
+    border-radius: 8px;
+}
+
+.text {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.8;
+    background: -webkit-repeating-linear-gradient(yellow, yellow 36px, white 36px, white 72px);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+.finish {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.8;
+    background: -webkit-repeating-linear-gradient(white, white 36px, yellow 36px, yellow 72px);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+#conclusion {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: gold;
+}
